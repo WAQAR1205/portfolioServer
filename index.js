@@ -33,6 +33,9 @@ app.get("/", (req, res) => {
   res.send("Server is running successfully!");
 });
 
+app.get("/hi", (req, res) => {
+  res.send("1234");
+});
 app.post("/contact", (req, res) => {
   const { firstName, lastName, email, message, phone } = req.body;
   const name = `${firstName} ${lastName}`;
